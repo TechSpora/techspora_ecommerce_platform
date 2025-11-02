@@ -1,0 +1,152 @@
+.orders-page {
+  min-height: calc(100vh - 200px);
+  padding: 2rem;
+}
+
+.orders-page h1 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.no-orders {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.no-orders p {
+  font-size: 1.5rem;
+  color: #7f8c8d;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.order-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.order-date {
+  margin: 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-badge.pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status-badge.processing {
+  background-color: #3498db;
+  color: white;
+}
+
+.status-badge.shipped {
+  background-color: #9b59b6;
+  color: white;
+}
+
+.status-badge.delivered {
+  background-color: #27ae60;
+  color: white;
+}
+
+.status-badge.cancelled {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.order-items {
+  padding: 1.5rem;
+}
+
+.order-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.order-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info p {
+  margin: 0.25rem 0;
+}
+
+.item-total {
+  font-weight: bold;
+  color: #27ae60;
+  align-self: center;
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+.order-total p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.order-payment p {
+  margin: 0;
+  color: #7f8c8d;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
